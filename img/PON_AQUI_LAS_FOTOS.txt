@@ -1,0 +1,21 @@
+Pon aqui 5 fotos del menu con estos nombres EXACTOS (respetando mayusculas/minusculas):
+
+menu-pizza.jpg
+menu-quesadilla.jpg
+menu-ensalada.jpg
+menu-hamburguesa.jpg
+menu-chuleta.jpg
+
+Mientras no las pongas, la invitacion muestra automaticamente un icono grande en su lugar,
+asi que puedes enviarla ya mismo y actualizar las fotos despues sin tocar nada mas.
+
+Tip: usa fotos cuadradas o casi cuadradas (por ejemplo 800x600) para que se vean bien en las tarjetas.
+
+FOTO DE FONDO DE LA PAREJA
+
+Guarda en esta misma carpeta la foto de Estefania y Camilo con este nombre EXACTO:
+
+foto-pareja.jpg
+
+La invitacion la mostrara automaticamente como fondo, centrada, en blanco y negro y con
+transparencia suave para que los textos sigan siendo faciles de leer.
