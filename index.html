@@ -240,7 +240,18 @@
   }
   .send-btn:disabled{ opacity:.5; cursor:not-allowed; }
   .status{ text-align:center; font-size:14px; margin-top:10px; min-height:18px; color:#7d4a40; }
-  .deadline-note{ text-align:center; font-size:17px; line-height:1.5; font-weight:600; color:var(--gold-dark); margin:14px 4px 0; }
+  .deadline-note{
+    text-align:center; font-size:19px; line-height:1.45; font-weight:700;
+    color:var(--gold-dark); margin:18px 0 0; padding:14px 12px;
+    background:rgba(217,163,176,.16);
+    border-top:1px solid var(--pink-dark); border-bottom:1px solid var(--pink-dark);
+  }
+  .deadline-label{
+    display:block; margin-bottom:5px;
+    color:var(--pink-dark); font-family:'Playfair Display', serif;
+    font-size:16px; font-weight:700; letter-spacing:2px;
+    text-transform:uppercase;
+  }
   .footer-note{ text-align:center; font-size:18px; font-weight:600; color:var(--gold-dark); margin-top:22px; }
   @media (max-width:600px){
     body{ padding:14px 8px 40px; }
@@ -252,7 +263,7 @@
     .hero{ margin:0 -8px 12px; padding:20px 10px 12px; }
     h1{ font-size:34px; }
     .love-message{ font-size:17px; padding:8px 4px; }
-    .deadline-note{ font-size:16px; }
+    .deadline-note{ font-size:17px; padding:13px 10px; }
     .footer-note{ font-size:17px; }
     .event-note{ grid-template-columns:1fr; gap:14px; }
     .event-note .detail + .detail{ border-left:0; border-top:1px solid var(--line); padding-top:14px; }
@@ -341,7 +352,7 @@
       </div>
       <button class="send-btn" id="enviarBtn" disabled>Enviar mi confirmaci&oacute;n &#128140;</button>
       <div class="status" id="status"></div>
-      <p class="deadline-note">Nos encantar&aacute; celebrar contigo. Agradecemos confirmar tu asistencia a m&aacute;s tardar el 31 de octubre de 2026. Si no recibimos tu confirmaci&oacute;n, entenderemos que no podr&aacute;s acompa&ntilde;arnos.</p>
+      <p class="deadline-note"><span class="deadline-label">Importante</span>Nos encantar&aacute; celebrar contigo. Agradecemos confirmar tu asistencia a m&aacute;s tardar el 31 de octubre de 2026. Si no recibimos tu confirmaci&oacute;n, entenderemos que no podr&aacute;s acompa&ntilde;arnos.</p>
     </div>
 
     <p class="footer-note">Con cari&ntilde;o, Estefan&iacute;a &amp; Camilo</p>
