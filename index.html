@@ -40,7 +40,7 @@
   }
   .hero{
     position:relative;
-    margin:-24px -16px 14px;
+    margin:0 -16px 14px;
     padding:24px 16px 14px;
     overflow:hidden;
     border-radius:10px;
@@ -70,43 +70,32 @@
     border-radius:3px;
   }
   .card > *{ position:relative; z-index:1; }
+  .kicker-section{
+    position:relative;
+    z-index:1;
+    margin:-24px -16px 0;
+    padding:12px 16px 14px;
+    background:var(--cream);
+    border-bottom:1px solid var(--line);
+    text-align:center;
+  }
   .ornament{ text-align:center; color:var(--pink); font-size:22px; letter-spacing:8px; margin-bottom:6px;}
   .kicker{
-    display:flex; align-items:center; justify-content:center; gap:12px;
-    text-align:center; letter-spacing:5px;
-    font-family:'Cormorant Garamond', serif; font-size:46px; font-style:italic;
-    font-weight:600; color:#b66f82; line-height:1.05;
-    text-shadow:0 1px 2px rgba(166,103,122,.22);
-    margin:0 0 8px;
+    display:flex; align-items:center; justify-content:center; gap:14px;
+    text-align:center; text-transform:uppercase; letter-spacing:3px;
+    font-family:'Playfair Display', serif; font-size:46px;
+    font-weight:700; color:var(--pink-dark); line-height:1.1;
+    margin:0;
   }
   .kicker::before,
   .kicker::after{
     content:'\2665';
+    flex:0 0 auto;
     color:var(--pink);
     font-family:'Cormorant Garamond', serif;
-    font-size:20px;
-    font-style:normal;
+    font-size:22px;
+    font-weight:400;
     letter-spacing:0;
-    text-shadow:none;
-    animation:heartPulse 2.8s ease-in-out infinite;
-  }
-  .kicker{ animation:kickerReveal .9s ease-out both, textSparkle 3.8s ease-in-out 1.2s infinite; }
-  @keyframes kickerReveal{
-    from{ opacity:0; transform:translateY(8px) scale(.96); }
-    to{ opacity:1; transform:translateY(0) scale(1); }
-  }
-  @keyframes heartPulse{
-    0%,100%{ opacity:.65; transform:scale(1); }
-    50%{ opacity:1; transform:scale(1.16); }
-  }
-  @keyframes textSparkle{
-    0%,72%,100%{ text-shadow:0 1px 2px rgba(166,103,122,.22); }
-    82%{ text-shadow:0 0 5px rgba(255,255,255,.9), 0 1px 8px rgba(217,163,176,.8); }
-  }
-  @media (prefers-reduced-motion:reduce){
-    .kicker,
-    .kicker::before,
-    .kicker::after{ animation:none; }
   }
   h1{
     font-family:'Playfair Display', serif;
@@ -253,6 +242,19 @@
   .status{ text-align:center; font-size:14px; margin-top:10px; min-height:18px; color:#7d4a40; }
   .deadline-note{ text-align:center; font-size:15px; line-height:1.45; color:#5f5f58; margin:14px 4px 0; }
   .footer-note{ text-align:center; font-size:16px; color:var(--gold-dark); margin-top:22px; }
+  @media (max-width:600px){
+    body{ padding:14px 8px 40px; }
+    .card{ padding:34px 20px 28px; }
+    .kicker-section{ margin:-14px -8px 0; padding:12px 10px 14px; }
+    .kicker{ gap:8px; font-size:32px; letter-spacing:2px; }
+    .kicker::before,
+    .kicker::after{ font-size:17px; }
+    .hero{ margin:0 -8px 12px; padding:20px 10px 12px; }
+    h1{ font-size:34px; }
+    .love-message{ font-size:17px; padding:8px 4px; }
+    .event-note{ grid-template-columns:1fr; gap:14px; }
+    .event-note .detail + .detail{ border-left:0; border-top:1px solid var(--line); padding-top:14px; }
+  }
   @media print{
     body{ background:#fff; padding:0; }
     .rsvp .send-btn, .choice, .note{ display:none; }
@@ -261,9 +263,11 @@
 </head>
 <body>
   <div class="card" id="card">
+    <div class="kicker-section">
+      <p class="kicker">Nos casamos</p>
+    </div>
     <div class="hero">
     <div class="ornament">&#9829;</div>
-    <p class="kicker">Nos casamos</p>
     <h1>Estefan&iacute;a<span class="amp">&amp;</span>Camilo</h1>
 
     <div class="divider">&mdash; &#9829; &mdash;</div>
